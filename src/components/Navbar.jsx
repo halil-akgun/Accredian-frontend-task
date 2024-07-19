@@ -5,7 +5,7 @@ import { Button } from '@mui/material';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-white">
+        <nav style={{ backgroundColor: 'white' }} className="navbar navbar-expand-lg bg-body-white sticky-top">
             <div className="container">
                 <a className="navbar-brand" href="#">
                     <img src={logo} alt="logo" width="111px" className="d-inline-block me-3" />
