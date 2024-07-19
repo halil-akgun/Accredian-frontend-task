@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+#overlay {
+  max-width: 100%;
+  height: Hug (60px)px;
+  padding: 16px 11px;
+  gap: 0px;
+  background: #1A73E826;
+  text-align: center;
+}
+
+#overlayContent {
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+#contactExpertBtn {
+  color: #1A73E8;
+  text-decoration: none;
+  width: Hug (139px)px;
+  height: Hug (28px)px;
+  padding: 0px 8px 0px 8px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 17.02px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#overlayText {
+  font-family: Inter;
+  font-size: 16.88px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  columns: #262626;
+}
