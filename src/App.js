@@ -1,6 +1,6 @@
 import React from 'react';
 import HomePage from "./pages/HomePage";
-import TopBar from "./components/TopBar";
+import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
 import Overlay from './components/Overlay';
 
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Overlay />
-      <TopBar />
+      <Navbar />
       <HomePage />
       <Footer />
     </div>
