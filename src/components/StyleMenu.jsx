@@ -61,6 +61,7 @@ export default function CustomizedMenus() {
         <div>
             <Button
                 id="demo-customized-button"
+                sx={{ textTransform: 'none' }}
                 aria-controls={open ? 'demo-customized-menu' : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}

@@ -23,18 +23,18 @@ const Navbar = () => {
                             <a className="nav-link" href="#">Resources</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" aria-disabled="true">About Us</a>
+                            <a className="nav-link" href="#">About Us</a>
                         </li>
                         <li className="nav-item">
                             <a href='#'>
-                                <Button variant="contained" color="grey">
+                                <Button sx={{ textTransform: 'none' }} variant="contained" color="grey">
                                     Login
                                 </Button>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a href='#'>
-                                <Button variant="contained" color="primary">
+                                <Button sx={{ textTransform: 'none' }} variant="contained" color="primary">
                                     Try for free
                                 </Button>
                             </a>

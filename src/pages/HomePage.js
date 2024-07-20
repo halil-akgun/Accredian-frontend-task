@@ -1,9 +1,10 @@
 import React from 'react';
+import HomeTabs from '../components/HomeTabs';
 
 const HomePage = () => {
     return (
         <div>
-            <h1>HomePage</h1>
+            <HomeTabs />
         </div>
     );
 };
