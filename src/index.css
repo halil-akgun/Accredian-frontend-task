@@ -5,7 +5,7 @@ body {
 #overlay {
   max-width: 100%;
   height: Hug (60px)px;
-  padding: 16px 11px;
+  padding: 8px 11px;
   gap: 0px;
   background: #1A73E826;
   text-align: center;
@@ -26,7 +26,7 @@ body {
   text-decoration: none;
   width: Hug (139px)px;
   height: Hug (28px)px;
-  padding: 0px 8px 0px 8px;
+  padding-left: 8px;
   gap: 0px;
   font-family: Inter;
   font-size: 15px;
@@ -43,4 +43,61 @@ body {
   line-height: 28px;
   text-align: left;
   columns: #262626;
+}
+
+@media (max-width: 960px) {
+  #iconContainer1 {
+    left: 13% !important;
+  }
+
+  #iconContainer2 {
+    left: 41% !important;
+  }
+
+  #iconContainer3 {
+    left: 69% !important;
+  }
+
+  #iconContainer1 .MuiSvgIcon-root,
+  #iconContainer2 .MuiSvgIcon-root,
+  #iconContainer3 .MuiSvgIcon-root {
+    font-size: 44px !important;
+  }
+
+  #iconContainer1 .iconText,
+  #iconContainer2 .iconText,
+  #iconContainer3 .iconText {
+    font-size: 8px !important;
+    width: 88px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #iconContainer1 {
+    top: 20% !important;
+    left: 10% !important;
+  }
+
+  #iconContainer2 {
+    top: 20% !important;
+    left: 38% !important;
+  }
+
+  #iconContainer3 {
+    top: 20% !important;
+    left: 67% !important;
+  }
+
+  #iconContainer1 .MuiSvgIcon-root,
+  #iconContainer2 .MuiSvgIcon-root,
+  #iconContainer3 .MuiSvgIcon-root {
+    font-size: 36px !important;
+  }
+
+  #iconContainer1 .iconText,
+  #iconContainer2 .iconText,
+  #iconContainer3 .iconText {
+    font-size: 6px !important;
+    width: 77px !important;
+  }
 }
