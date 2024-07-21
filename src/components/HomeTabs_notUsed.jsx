@@ -38,7 +38,7 @@ export default function HomeTabs() {
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', bgcolor: 'background.paper', p: 3 }}>
             <Box sx={{ width: '80%', textAlign: 'center' }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '30px' }}>
                     <Tabs
                         sx={{ backgroundColor: '#e6f0fc', borderRadius: '50px', width: '422px' }}
                         value={value}

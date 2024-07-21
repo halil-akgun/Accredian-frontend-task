@@ -1,10 +1,11 @@
 import React from 'react';
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import howDoIReferImg from '../assets/howDoIReferImg.png';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 import SaveAsIcon from '@mui/icons-material/SaveAs';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
+import ReferButton from './ReferButton';
 
 const FullWidthContainer = styled(Box)({
     backgroundColor: '#EEF5FF',
@@ -19,9 +20,11 @@ const FullWidthContainer = styled(Box)({
     maxWidth: '100%',
     boxSizing: 'border-box',
     margin: 0,
-    padding: 0,
+    padding: '35px 0',
+    gap: '30px',
     overflow: 'hidden',
     position: 'relative',
+    marginTop: '40px',
 });
 
 const StyledImage = styled('img')({
@@ -31,17 +34,6 @@ const StyledImage = styled('img')({
         width: '100%',
         marginTop: '20px',
     },
-});
-
-const StyledButton = styled(Button)({
-    marginTop: '40px',
-    marginBottom: '40px',
-    backgroundColor: '#1A73E8',
-    textTransform: 'none',
-    color: '#ffffff',
-    '&:hover': {
-        backgroundColor: '#1A73E8'
-    }
 });
 
 const IconContainer = styled(Box)({
@@ -63,7 +55,7 @@ const IconText = styled(Typography)({
 const HowDoIRefer = () => {
     return (
         <FullWidthContainer>
-            <Typography sx={{ paddingTop: '30px', paddingBottom: '30px' }} variant="h4" component="h1" gutterBottom>
+            <Typography sx={{ fontSize: '19px', fontWeight: 'bold', paddingBottom: '30px' }} variant="h4" component="h1" gutterBottom>
                 How Do I <span style={{ color: '#1A73E8' }}>Refer?</span>
             </Typography>
             <Box sx={{ position: 'relative', display: 'inline-block' }}>
@@ -81,9 +73,7 @@ const HowDoIRefer = () => {
                     <IconText className="iconText">Both parties receive a bonus 30 days after program enrollment.</IconText>
                 </IconContainer>
             </Box>
-            <StyledButton variant="contained">
-                Refer Now
-            </StyledButton>
+            <ReferButton />
         </FullWidthContainer>
     );
 }
