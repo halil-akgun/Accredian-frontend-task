@@ -33,10 +33,10 @@ const NavigationTabs = () => {
     return (
         <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
             <TabContainer>
-                <Tab to="refer" spy={true} smooth={true} duration={500} activeClass="active">Refer</Tab>
-                <Tab to="benefits" spy={true} smooth={true} duration={500} activeClass="active">Benefits</Tab>
-                <Tab to="faqs" spy={true} smooth={true} duration={500} activeClass="active">FAQs</Tab>
-                <Tab to="support" spy={true} smooth={true} duration={500} activeClass="active">Support</Tab>
+                <Tab to="refer" spy={true} smooth={true} duration={500} activeClass="active" offset={-60}>Refer</Tab>
+                <Tab to="benefits" spy={true} smooth={true} duration={500} activeClass="active" offset={-60}>Benefits</Tab>
+                <Tab to="faqs" spy={true} smooth={true} duration={500} activeClass="active" offset={-60}>FAQs</Tab>
+                <Tab to="support" spy={true} smooth={true} duration={500} activeClass="active" offset={-60}>Support</Tab>
             </TabContainer>
         </div>
     );

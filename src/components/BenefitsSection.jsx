@@ -1,9 +1,10 @@
 import React from 'react';
-import { Box, List, ListItem, ListItemText, ListSubheader, Typography } from '@mui/material';
+import { Box, Typography, Grid, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import AllPrograms from './AllPrograms';
+import Programs from './Programs';
+import ReferButton from './ReferButton';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -32,48 +33,6 @@ const Container = styled(Box)({
     },
 });
 
-const StyledList = styled(List)({
-    width: '100%',
-    maxWidth: 360,
-    borderRadius: '10px',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-    '& .MuiListSubheader-root': {
-        backgroundColor: '#1A73E8',
-        fontSize: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        borderRadius: '10px 10px 0 0',
-        fontWeight: 'bold',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '0 16px',
-    },
-    '& .MuiListItem-root': {
-        padding: '10px 16px',
-        display: 'flex',
-        justifyContent: 'space-between',
-        cursor: 'pointer',
-        alignItems: 'center',
-        position: 'relative',
-        '&::after': {
-            content: '""',
-            position: 'absolute',
-            bottom: 0,
-            left: '15px',
-            right: '22px',
-            height: '1px',
-            backgroundColor: '#E0E0E0',
-        },
-        '&:last-child::after': {
-            content: 'none',
-        },
-    },
-    '& .MuiListItemText-root': {
-        flex: '1 1 auto',
-    },
-});
-
 const BenefitsSection = () => {
     const programs = [
         'PRODUCT MANAGEMENT',
@@ -94,24 +53,29 @@ const BenefitsSection = () => {
                 </Typography>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={3}>
-                        <StyledList subheader={
-                            <ListSubheader>
-                                ALL PROGRAMS
-                                <ArrowForwardIosIcon sx={{ fontSize: '12px', color: '#fff' }} />
-                            </ListSubheader>
-                        }>
-                            {programs.map((program, index) => (
-                                <ListItem key={index}>
-                                    <ListItemText primaryTypographyProps={{ fontSize: '11px', fontWeight: 'bold' }} primary={program} />
-                                    <ArrowForwardIosIcon sx={{ fontSize: '12px', color: '#1A73E8' }} />
-                                </ListItem>
-                            ))}
-                        </StyledList>
+                        <AllPrograms programs={programs} />
                     </Grid>
                     <Grid item xs={12} md={9}>
-                        <Item>Program Details Here</Item>
+                        <Programs />
                     </Grid>
                 </Grid>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'end' }}>
+                    <FormControl sx={{ m: 2, minWidth: 140 }} disabled>
+                        <InputLabel id="demo-simple-select-disabled-label">Show More</InputLabel>
+                        <Select
+                            labelId="demo-simple-select-disabled-label"
+                            id="demo-simple-select-disabled"
+                            label="Show More"
+                        >
+                            <MenuItem value="">
+                                <em>None</em>
+                            </MenuItem>
+                        </Select>
+                    </FormControl>
+                </div>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+                    <ReferButton />
+                </div>
             </Container>
         </Box>
     );

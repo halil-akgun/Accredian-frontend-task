@@ -101,3 +101,58 @@ body {
     width: 77px !important;
   }
 }
+
+
+/* programs table */
+.table-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.programs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.programs-table th {
+  padding: 13.5px 20px !important;
+  color: #1350A0;
+  font-size: 14px;
+  white-space: nowrap;
+  background: #1A73E859;
+}
+
+.programs-table td {
+  background: #EBF3FF59;
+  font-size: 13px;
+}
+
+.programs-table tbody tr:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.programs-table th:nth-child(2),
+.programs-table th:nth-child(3),
+.programs-table td:nth-child(3),
+.programs-table td:nth-child(4) {
+  text-align: center;
+  padding: 17px;
+  border-left: 1.5px solid #00000038;
+}
+
+.programs-table td:nth-child(1) {
+  color: #445ada;
+  padding-left: 10px;
+}
+
+
+.MuiOutlinedInput-root {
+  height: 50px !important;
+}

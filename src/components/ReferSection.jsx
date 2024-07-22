@@ -67,7 +67,7 @@ const ReferSection = () => {
                     <Typography variant="h2" component="h1" style={{ fontSize: '2rem', fontWeight: 'bold' }}>
                         Let’s Learn & Earn
                     </Typography>
-                    <Typography variant="h6" component="p" style={{ marginTop: '10px' }}>
+                    <Typography variant="h6" component="p" style={{ marginTop: '10px', marginBottom: '30px' }}>
                         Get a chance to win up-to <span style={{ color: '#1A73E8', fontWeight: 'bold', fontSize: '1.6rem' }}>Rs. 15,000</span>
                     </Typography>
                     <ReferButton />

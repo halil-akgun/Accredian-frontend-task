@@ -58,7 +58,7 @@ const HowDoIRefer = () => {
             <Typography sx={{ fontSize: '19px', fontWeight: 'bold', paddingBottom: '30px' }} variant="h4" component="h1" gutterBottom>
                 How Do I <span style={{ color: '#1A73E8' }}>Refer?</span>
             </Typography>
-            <Box sx={{ position: 'relative', display: 'inline-block' }}>
+            <Box sx={{ marginBottom: '20px', position: 'relative', display: 'inline-block' }}>
                 <StyledImage src={howDoIReferImg} alt="How Do I Refer Image" />
                 <IconContainer id='iconContainer1' sx={{ top: '28%', left: '16.5%' }}>
                     <PersonAddAlt1Icon sx={{ fontSize: '66px', color: '#1A73E8' }} />
