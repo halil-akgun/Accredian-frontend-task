@@ -51,7 +51,7 @@ const BenefitsSection = () => {
                 <Typography sx={{ fontSize: '19px', fontWeight: 'bold', paddingTop: '10px', paddingBottom: '10px' }} variant="h4" component="h1" gutterBottom>
                     What Are The <span style={{ color: '#1A73E8' }}>Referral Benefits?</span>
                 </Typography>
-                <Grid container spacing={2}>
+                <Grid container spacing={4}>
                     <Grid item xs={12} md={3}>
                         <AllPrograms programs={programs} />
                     </Grid>

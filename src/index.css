@@ -107,7 +107,7 @@ body {
 .table-container {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  overflow: hidden;
+  overflow-x: auto;
 }
 
 .programs-table {
@@ -152,6 +152,9 @@ body {
   padding-left: 10px;
 }
 
+.programs-table td:nth-child(2) {
+  min-width: 235px;
+}
 
 .MuiOutlinedInput-root {
   height: 50px !important;
